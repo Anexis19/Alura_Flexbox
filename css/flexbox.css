@@ -101,3 +101,40 @@
     display: flex;
     width: 23%;
 }
+/*
+    DISPLAY: FLEX           Permite que los elementos internos que actualmente se comportan como elementos TIPO BLOCK, pasen a ser FLEX, de esta manera, se encuentra un elemento seguido de otro horizontalmente
+
+    JUSTIFY-CONTENT: SPACE-BETWEEN  Permite que los elementos que ya tienen una propiedad TIPO FLEX, pasen a ordenarse de determinada forma HORIZONTALMENTE
+
+*/
+.videoSobre .container{
+    display: flex;
+    justify-content: space-around;
+}
+/*
+    CONFIGURACION DE VERSION MOVILE RESPONSIVE
+*/
+
+
+/*
+    FLEX - DIRECTION: COLUMN     Permite que los elementos que ya son de tipo FLEX, pasen a comportarse como columna, de esta forma, no habra desbordamiento en la version movil
+
+    ALIGN-ITEMS: INITIAL        Permite que la alineacion aplicada anteriormente (align-items:center) cambie. Dado que esa alineacion permitira centrar los elementos verticalmente, ahora, en este caso, se han alineado horizontalmente. Y dado que necesitamos que estos campos ocupen el 100% horizontalmente para la version movile, usamos la alineacion original por defecto que si usa el 100% de la pantalla horizontalmente
+
+    TEXT-ALIGN: CENTER          Permite centrar el texto dentro del contenido
+
+*/
+.headerPrincipal .container{
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
+}
+/*
+    FLEX - DIRECTION: COLUMN     Permite que los elementos que ya son de tipo FLEX, pasen a comportarse como columna, de esta forma, no habra desbordamiento en la version movil
+
+*/
+.headerPrincipal-nav{
+    flex-direction: column;
+}
+
+
