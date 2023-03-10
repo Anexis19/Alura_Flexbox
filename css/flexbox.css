@@ -80,6 +80,24 @@
 .rodapePrincipal-navMap-list{
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 260px;
     flex-wrap: wrap;
+}
+/*
+    DISPLAY: FLEX           Permite que los elementos internos que actualmente se comportan como elementos TIPO BLOCK, pasen a ser FLEX, de esta manera, se encuentra un elemento seguido de otro horizontalmente
+
+    FLEX-WRAP: WRAP         Para este caso, se sabe que por defecto, el comportamiento de los elementos se da en celdas, por lo que definimos un tamaño especifico de las celdas, para este caso, del 23%, una vez se llegue al 100%, se rompera dicha fila de celdas y se hara una nueva
+
+*/
+.contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*
+    DISPLAY: FLEX           Permite que los elementos internos que actualmente se comportan como elementos TIPO BLOCK, pasen a ser FLEX, de esta manera, se encuentra un elemento seguido de otro horizontalmente
+
+*/
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    width: 23%;
 }
