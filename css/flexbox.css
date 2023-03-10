@@ -114,27 +114,86 @@
 /*
     CONFIGURACION DE VERSION MOVILE RESPONSIVE
 */
+@media (max-width:768px){
 
+    /*
+        FLEX - DIRECTION: COLUMN     Permite que los elementos que ya son de tipo FLEX, pasen a comportarse como columna, de esta forma, no habra desbordamiento en la version movil
 
-/*
-    FLEX - DIRECTION: COLUMN     Permite que los elementos que ya son de tipo FLEX, pasen a comportarse como columna, de esta forma, no habra desbordamiento en la version movil
+        ALIGN-ITEMS: INITIAL        Permite que la alineacion aplicada anteriormente (align-items:center) cambie. Dado que esa alineacion permitira centrar los elementos verticalmente, ahora, en este caso, se han alineado horizontalmente. Y dado que necesitamos que estos campos ocupen el 100% horizontalmente para la version movile, usamos la alineacion original por defecto que si usa el 100% de la pantalla horizontalmente
 
-    ALIGN-ITEMS: INITIAL        Permite que la alineacion aplicada anteriormente (align-items:center) cambie. Dado que esa alineacion permitira centrar los elementos verticalmente, ahora, en este caso, se han alineado horizontalmente. Y dado que necesitamos que estos campos ocupen el 100% horizontalmente para la version movile, usamos la alineacion original por defecto que si usa el 100% de la pantalla horizontalmente
+        TEXT-ALIGN: CENTER          Permite centrar el texto dentro del contenido
 
-    TEXT-ALIGN: CENTER          Permite centrar el texto dentro del contenido
+    */
+    .headerPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+    /*
+        FLEX - DIRECTION: COLUMN     Permite que los elementos que ya son de tipo FLEX, pasen a comportarse como columna, de esta forma, no habra desbordamiento en la version movil
 
-*/
-.headerPrincipal .container{
-    flex-direction: column;
-    align-items: initial;
-    text-align: center;
+    */
+    .headerPrincipal-nav{
+        flex-direction: column;
+    }
+
+    /*
+        FLEX - DIRECTION: COLUMN     Permite que los elementos que ya son de tipo FLEX, pasen a comportarse como columna, de esta forma, no habra desbordamiento en la version movil. Esto se aplica al contenedor PADRE
+    */
+    .contenidoPrincipal-cursos{
+        flex-direction: column;
+    }
+    /*
+        WIDTH: 100%                 Permite aplicar un porcentaje mayor a cada elemento que ahora se comporta como columna. Dado que deseamos que abarque el 100% de la venta, hacemos que su width sea de 100%
+    */
+    .contenidoPrincipal-cursos-link{
+        width: 100%;
+    }
+    /*
+        HEIGHT: AUTO                Dado que para la version Desktop definimos un tamaño para las columnas, lo que ahora se desea es que su tamaño sea automatico y por ende, ya no funcionara el FLEX-WRAP, entonces, su comportamiento se basara enteramente por FLEX-DIRECTION: COLUMN
+    */
+    .rodapePrincipal-navMap-list{
+        height: auto;
+    }
+    /*
+        FLEX - DIRECTION: COLUMN     Permite que los elementos que ya son de tipo FLEX, pasen a comportarse como columna, de esta forma, no habra desbordamiento en la version movil. Esto se aplica al contenedor PADRE
+
+        FLEX-WRAP: NOWRAP           Al ya tener la configuracion en columna, no necesitamos que dichas columnas vayan una seguida de la otra, por eso modificamos el comportamiento WRAP a NOWRAP
+    */
+    .videoSobre .container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    /*
+        FLEX - DIRECTION: COLUMN     Permite que los elementos que ya son de tipo FLEX, pasen a comportarse como columna, de esta forma, no habra desbordamiento en la version movil. Esto se aplica al contenedor PADRE
+    */
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }
+    /*
+        ALIGN-ITEMS: INITIAL        Dado que nuestros dos contenedores (patrocinadores y formulario) ya no se encuentran en formato ROW sino en formato COLUMN, solo se necesita que los elementos PROPIOS del contenedor PATROCINADORES se encuentren centrados verticalmente entre si
+
+        WIDTH: 100%                 Permite que al trabajar en columnas, el contenedor de los patrocinadores ocupe el 100% del ancho de la pantalla del dispositivo movil
+
+        MARGIN: 0                   Elimina el margin que habia entre los contenedores cuando se comportaban en ROW
+    */
+    .rodapePrincipal-patrocinadores-list{
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    /*
+        WIDTH: 100%                 Permite que el contenedor del formulario, ya no ocupe el 25% de la pantalla sino ahora, el 100%, se esta manera, se dentran los dos contenedores uno debajo del otro (contenedor patrocinadores y debajo, contenedor formulario)
+    */
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    }
+
+    /*
+        JUSTIFY-CONTENT: CENTER     Dado que el contenedor PADRE ocupa el 100% del ancho de la pantalla, para centrar a su HIJO, usamos la propiedad CENTER
+    */
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+    }
+
 }
-/*
-    FLEX - DIRECTION: COLUMN     Permite que los elementos que ya son de tipo FLEX, pasen a comportarse como columna, de esta forma, no habra desbordamiento en la version movil
-
-*/
-.headerPrincipal-nav{
-    flex-direction: column;
-}
-
-
