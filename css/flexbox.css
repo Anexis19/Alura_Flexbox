@@ -26,12 +26,9 @@
 }
 
 /*
-    DISPLAY: FLEX               Permite que los elementos internos que actualmente se comportan como
-    elementos TIPO BLOCK, pasen a ser FLEX, de esta manera, se encuentra un elemento seguido de otro
-    horizontalmente
+    DISPLAY: FLEX               Permite que los elementos internos que actualmente se comportan como elementos TIPO BLOCK, pasen a ser FLEX, de esta manera, se encuentra un elemento seguido de otro horizontalmente
 
-    JUSTIFY-CONTENT: SPACE-BETWEEN  Permite que los elementos que ya tienen una propiedad TIPO FLEX,
-    pasen a ordenarse de determinada forma HORIZONTALMENTE
+    JUSTIFY-CONTENT: SPACE-BETWEEN  Permite que los elementos que ya tienen una propiedad TIPO FLEX, pasen a ordenarse de determinada forma HORIZONTALMENTE
 */
 
 .rodapePrincipal-patrocinadores .container{
@@ -40,24 +37,15 @@
 }
 
 /*
-    DISPLAY: FLEX               Permite que los elementos internos que actualmente se comportan como
-    elementos TIPO BLOCK, pasen a ser FLEX, de esta manera, se encuentra un elemento seguido de otro
-    horizontalmente
+    DISPLAY: FLEX               Permite que los elementos internos que actualmente se comportan como elementos TIPO BLOCK, pasen a ser FLEX, de esta manera, se encuentra un elemento seguido de otrohorizontalmente
 
-    ALIGN-ITEMS: CENTER         Permite que los elementos contenidos en el elemento padre
-    se alinen tanto vertical como horizontalmente (Se alinean HORIZONTALMENTE dependiendo del
-    tamaño del contenedor PADRE)
+    ALIGN-ITEMS: CENTER         Permite que los elementos contenidos en el elemento padre se alinen tanto vertical como horizontalmente (Se alinean HORIZONTALMENTE dependiendo del tamaño del contenedor PADRE)
 
-    WIDTH: 70%                  Se aplica un ancho determinado para el contenedor que alamacena los
-    patrocinadores dado que su contenedor PADRE, NO contiene el 100% del ancho de la pantalla. Esto es
-    porque comparte ese 100% con el contenedor PADRE que hace referencia al formulario
+    WIDTH: 70%                  Se aplica un ancho determinado para el contenedor que alamacena los patrocinadores dado que su contenedor PADRE, NO contiene el 100% del ancho de la pantalla. Esto es porque comparte ese 100% con el contenedor PADRE que hace referencia al formulario
 
-    JUSTIFY-CONTENT: SPACE AROUND  ermite que los elementos que ya tienen una propiedad TIPO FLEX,
-    pasen a ordenarse de determinada forma HORIZONTALMENTE. La forma en que se organizan, depende del tamaño
-    del contenedor PADRE, que en este caso es del 70%
+    JUSTIFY-CONTENT: SPACE AROUND  ermite que los elementos que ya tienen una propiedad TIPO FLEX, pasen a ordenarse de determinada forma HORIZONTALMENTE. La forma en que se organizan, depende del tamaño del contenedor PADRE, que en este caso es del 70%
 
-    MARGIN: RIGHT           Se le aplica un margen del 5% entre el contenedor de los patrocinadores y el
-    contenedor del formulario
+    MARGIN: RIGHT           Se le aplica un margen del 5% entre el contenedor de los patrocinadores y el contenedor del formulario
 */
 .rodapePrincipal-patrocinadores-list{
     display: flex;
@@ -68,17 +56,30 @@
 
 }
 /*
-    WIDTH: 25%              Se le aplica un ancho determinado al contenedor del elemento PADRE del formulario
-    De esta forma se hace referencia al 100% de la pantalla
+    WIDTH: 25%              Se le aplica un ancho determinado al contenedor del elemento PADRE del formulario. De esta forma se hace referencia al 100% de la pantalla
 */
 .rodapePrincipal-contatoForm{
     width: 25%;
 }
 /*
-    DISPLAY: FLEX           Permite que los elementos internos que actualmente se comportan como
-    elementos TIPO BLOCK, pasen a ser FLEX, de esta manera, se encuentra un elemento seguido de otro
-    horizontalmente
+    DISPLAY: FLEX           Permite que los elementos internos que actualmente se comportan como elementos TIPO BLOCK, pasen a ser FLEX, de esta manera, se encuentra un elemento seguido de otro horizontalmente
 */
 .rodapePrincipal-contatoForm-fieldset{
     display: flex;
+}
+/*
+    DISPLAY: FLEX           Permite que los elementos internos que actualmente se comportan como elementos TIPO BLOCK, pasen a ser FLEX, de esta manera, se encuentra un elemento seguido de otro horizontalmente
+
+    FLEX-DIRECTION: COLUMN  Por defecto, al aplicar DISPLAY: FLEX, los elementos toman la propiedad row que hace referecnai al FLEX-DIRECTION: ROW, es decir, en filas, por lo que cada hijo, hara parte de una fila
+    y se encontraran una al lado de otra. FLEX-DIRECTION: COLUMN permite cambiar esto haciendo que cada elemento hijo se comporte como una COLUMNA de esta manera, cada hijo representara una COLUMNA
+
+    HEIGHT: 250PX       Al aplicarle un alto al elemento PADRE, sus hijos, heredaran era altura, por lo tanto, cada columna tendra una altua maxima de 250px
+
+    FLEX-WRAP: WRAP     Permitira que cada elemento hijo que tienen la propiedad de COLUMN se "Quiebren" y por ende, ira una seguida de la otra.
+*/
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    flex-wrap: wrap;
 }
