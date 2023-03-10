@@ -1,0 +1,26 @@
+/*
+    DISPLAY: FLEX               Permite que dos elementos TIPO BLOCK, se ubiquen uno al lado del
+    otro. Para esto, los dos elementos se deben encontrar en un contenedor PADRE, que
+    es sobre el cual se aplicara la propiedad FLEX
+
+    ALIGN-ITEMS: CENTER         Permite que los elementos contenidos en el elemento padre
+    se alinen tanto vertical como horizontalmente (Se alinean HORIZONTALMENTE dependiendo del
+    tamaño del contenedor PADRE)
+
+    JUSTIFY-CONTENT: SPACE-BETWEEN  Permite que los elementos contenidos por el padre, se alinean de
+    una determinada forma a lo largo de la pantalla. Evitando usar margin, float, etc.
+*/
+
+.headerPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*
+    DISPLAY: FLEX               Permite que los elementos internos que actualmente se compartan como
+    elementos TIPO BLOCK, pasen a ser FLEX, de esta manera, se encuentra un elemento seguido de otro
+    horizontalmente
+*/
+.headerPrincipal-nav{
+    display: flex;
+}
